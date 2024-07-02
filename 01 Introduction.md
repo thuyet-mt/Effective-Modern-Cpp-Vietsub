@@ -43,11 +43,10 @@ lhs stands for “left-hand side.”
 
 * Tôi sử dụng “…” để biểu thị “mã khác có thể xuất hiện ở đây.” Dấu chấm lửng hẹp này khác với dấu chấm lửng rộng (“…”) được sử dụng trong mã nguồn cho các mẫu biến đổi của C++ 11. Nghe có vẻ khó hiểu nhưng không phải vậy. Ví dụ:
 ```cpp
-template<typename... Ts>                // these are C++
-void processVals(const Ts&... params)   // source code
-{                                       // ellipses
-     …                                  // this means "some
-                                        // code goes here"
+template<typename... Ts>                // these are C++ source code ellipses
+void processVals(const Ts&... params)   
+{                                       
+     …  // this means "some code goes here"
 }
 ```
 The declaration of processVals shows that I use typename when declaring type parameters in templates, but that’s merely a personal preference; the keyword class would work just as well. On those occasions where I show code excerpts from a C++ Standard, I declare type parameters using class, because that’s what the Standards do.
