@@ -8,11 +8,11 @@ Dự án dịch này nhằm mục đích mang những kiến thức quý báu t�
 
 ## Đóng góp vào Dự án
 
-Chúng tôi rất hoan nghênh sự đóng góp từ cộng đồng để giúp dịch Effective Modern C++ sang tiếng Việt. Dưới đây là cách bạn có thể đóng góp:
+Tôi rất hoan nghênh sự đóng góp từ cộng đồng để giúp dịch Effective Modern C++ sang tiếng Việt. Dưới đây là cách bạn có thể đóng góp:
 
 - **Dịch thuật:** Hỗ trợ dịch các chương, phần, hoặc các mục cụ thể của sách.
 - **Chỉnh sửa:** Đánh giá lại bản dịch để đảm bảo tính chính xác, rõ ràng và nhất quán.
-- **GitHub Issues:** Báo cáo vấn đề, đề xuất cải tiến hoặc thảo luận về dự án trên [kho lưu trữ GitHub của chúng tôi](link-to-your-repo).
+- **GitHub Issues:** Báo cáo vấn đề, đề xuất cải tiến hoặc thảo luận về dự án trên [kho lưu trữ GitHub của tôi](https://github.com/thuyet-mt/Effective-Modern-Cpp-Vietsub).
 
 ## Cách Tham Gia
 
@@ -28,7 +28,7 @@ Chúng tôi rất hoan nghênh sự đóng góp từ cộng đồng để giúp 
 
 ## Bắt Đầu
 
-Để bắt đầu, hãy xem [hướng dẫn đóng góp](link-to-your-contribution-guidelines) và bắt đầu dịch thuật! Sự đóng góp của bạn sẽ giúp mang Effective Modern C++ đến được nhiều lập trình viên hơn trong cộng đồng C++ Việt Nam.
+Sự đóng góp của bạn sẽ giúp mang Effective Modern C++ đến được nhiều lập trình viên hơn trong cộng đồng C++ Việt Nam.
 
 Hãy cùng nhau làm việc để mang tài nguyên quý báu này đến với cộng đồng lập trình viên Việt Nam!
 
