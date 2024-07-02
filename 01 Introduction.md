@@ -11,7 +11,7 @@ Các Items trong cuốn sách này là những hướng dẫn, không phải là
 ## Terminology and Conventions
 Hiện tại có bốn phiên bản chính thức của C++, mỗi phiên bản được đặt tên theo năm mà Tiêu chuẩn ISO tương ứng đã được thông qua: C++98, C++03, C++11, và C++14. Các phiên bản C++98 và C++03 chỉ khác nhau về các chi tiết kỹ thuật, vì vậy trong cuốn sách này, tôi đề cập đến cả hai với thuật ngữ C++98. Khi tôi nói đến C++11, tôi đề cập đến cả C++11 và C++14, vì C++14 hiệu quả là một tập hợp con của C++11. Khi tôi viết C++14, tôi đề cập đến cụ thể là C++14. Và nếu tôi đơn giản chỉ nhắc đến C++, tôi đang đưa ra một tuyên bố tổng quát áp dụng cho tất cả các phiên bản của ngôn ngữ này.
 
-![Term I Use](Term-I-Use.png)
+![Term I Use](pictures/Term-I-Use.png)
 
 Kết quả là, tôi có thể nói rằng C++ đặt một sự ưu tiên cao đối với hiệu suất (đúng cho tất cả các phiên bản), C++98 thiếu hỗ trợ cho concurrency (C++98 và C++03), C++11 hỗ trợ biểu thức lambda (  C++11 và C++14), và C++14 cung cấp khả năng suy luận kiểu trả về tổng quát của hàm. 
 
@@ -55,7 +55,7 @@ The declaration of processVals shows that I use typename when declaring type par
 Phần khai báo của `processVals` cho thấy rằng tôi sử dụng từ khóa `typename` khi khai báo các kiểu tham số  trong các mẫu (`templates`), nhưng đó chỉ là sở thích cá nhân; từ khóa `class` cũng hoạt động tương tự. Trong những trường hợp tôi trích đoạn code từ tiêu chuẩn C++, tôi khai báo các kiểu tham số sử dụng  `class`, bởi vì đó là cách tiêu chuẩn định nghĩa.
 
 Khi một đối tượng được khởi tạo với một đối tượng khác cùng kiểu, đối tượng mới được gọi là một bản sao của đối tượng khởi tạo, ngay cả khi bản sao được tạo thông qua hàm dịch chuyển (move constructor). Thật đáng tiếc, trong C++ không có thuật ngữ phân biệt rõ ràng giữa một đối tượng được sao chép bằng phương thức sao chép (copy constructor) và một đối tượng được sao chép bằng phương thức dịch chuyển (move constructor):
-![copy-and-move-constructed ](copy-and-move-constructed.png)
+![copy-and-move-constructed ](pictures/copy-and-move-constructed.png)
 
 Các bản sao của `rvalues` thường được tạo bằng move constructed, trong khi các bản sao của `lvalues` thường được tạo bằng phương thức copy constructed. Hàm ý là nếu bạn chỉ biết rằng một đối tượng là bản sao của một đối tượng khác, không thể khẳng định được độ tốn kém của quá trình tạo bản sao đó. Trong đoạn mã trên, ví dụ, không có cách nào để biết được chi phí để tạo tham số w mà không biết liệu `rvalues` hay `lvalues` được truyền vào hàm `someFunc`. (Bạn cũng phải biết chi phí của việc di chuyển và sao chép các đối tượng Widget.)
 
