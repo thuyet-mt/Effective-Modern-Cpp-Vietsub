@@ -1,4 +1,4 @@
-# Chào mừng đến với Dự án Dịch sách Effective Modern C++
+# Effective Modern C++ Vietsub Version
 
 ## Giới thiệu về Effective Modern C++
 
