@@ -55,6 +55,7 @@ The declaration of processVals shows that I use typename when declaring type par
 Phần khai báo của `processVals` cho thấy rằng tôi sử dụng từ khóa `typename` khi khai báo các kiểu tham số  trong các mẫu (`templates`), nhưng đó chỉ là sở thích cá nhân; từ khóa `class` cũng hoạt động tương tự. Trong những trường hợp tôi trích đoạn code từ tiêu chuẩn C++, tôi khai báo các kiểu tham số sử dụng  `class`, bởi vì đó là cách tiêu chuẩn định nghĩa.
 
 Khi một đối tượng được khởi tạo với một đối tượng khác cùng kiểu, đối tượng mới được gọi là một bản sao của đối tượng khởi tạo, ngay cả khi bản sao được tạo thông qua hàm dịch chuyển (move constructor). Thật đáng tiếc, trong C++ không có thuật ngữ phân biệt rõ ràng giữa một đối tượng được sao chép bằng phương thức sao chép (copy constructor) và một đối tượng được sao chép bằng phương thức dịch chuyển (move constructor):
+
 ![copy-and-move-constructed ](pictures/copy-and-move-constructed.png)
 
 Các bản sao của `rvalues` thường được tạo bằng move constructed, trong khi các bản sao của `lvalues` thường được tạo bằng phương thức copy constructed. Hàm ý là nếu bạn chỉ biết rằng một đối tượng là bản sao của một đối tượng khác, không thể khẳng định được độ tốn kém của quá trình tạo bản sao đó. Trong đoạn mã trên, ví dụ, không có cách nào để biết được chi phí để tạo tham số w mà không biết liệu `rvalues` hay `lvalues` được truyền vào hàm `someFunc`. (Bạn cũng phải biết chi phí của việc di chuyển và sao chép các đối tượng Widget.)
